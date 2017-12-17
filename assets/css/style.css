@@ -1,11 +1,6 @@
-
-/*Add some style to images*/
-img {
-	border-radius: 25px;
-	box-shadow: 0 15px 35px -6px #ffffff;
-	max-width: 100%;
-	margin-right: 10px;
-    float: left;
+{
+	
+	background-image: url("Images/swatch.jpg");
 
 }
 
@@ -13,8 +8,21 @@ img {
 /*jumbotron to hold gifs*/
 .jumbotron {
 	background-color: #f5f5f5;
-	box-shadow: 0 18px 26px -6px #222222;	
+	box-shadow: 0 18px 26px -6px #383e55;;	
 	background-size: cover;
-
 	margin: 0 25px 0 45px;
+}
+
+
+/*Add some style to images*/
+img {
+	border-radius: 25px;
+    box-shadow: 0 15px 35px -6px #383e55;;
+    max-width: 100%;
+    margin-right: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 250px;
+    float: left;
 }
