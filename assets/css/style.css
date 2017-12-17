@@ -1,5 +1,16 @@
 
-/*NavBar styling*/
+.page-header{
+	background-image: url(../swatch.jpg);
+	border-bottom: none;
+	padding-bottom: 5px;
+	margin: 10px 0 10px;
+}
+
+body {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+/*******************NavBar styling*********************************/
 div#navbar-primary-collapse{
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-size: 16px;
@@ -11,7 +22,11 @@ div#navbar-primary-collapse{
 }
 
 .navbar {
-	border-radius: 25px;
+	border-radius: 5px;
+}
+
+.navbar-default {
+	margin-bottom: 5px;
 }
 
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
@@ -22,14 +37,19 @@ div#navbar-primary-collapse{
 .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
 	margin-top:5px;
 }
+
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+	margin-top: 5px;
+}
 /*******************************************/
 
-/*jumbotron to hold gifs*/
+/*jumbotron to hold images*/
 .jumbotron {
 	background-color: #f5f5f5;
-	box-shadow: 0 18px 26px -6px #383e55;;	
+	box-shadow: 0 18px 26px -6px #383e55;	
 	background-size: cover;
 	margin: 0 25px 0 45px;
+
 }
 
 .row {
@@ -37,24 +57,24 @@ div#navbar-primary-collapse{
 	margin-right: 0px;
 }
 
-/*format images*/
+/*format images -- NOTE: Height and Width seem to be creating the extra empty frame*/
 
 img {
 	border-radius: 25px;
     box-shadow: 0 15px 35px -6px #383e55;
+    height:250px;
+    width: 250px;
     max-width: 100%;
     margin-right: 25px;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 250px;
-    height: 250px;
     float: left;
     padding:1px;
    	border:1px solid #021a40;
     background-color:#ffffff;
     text-align: center;
 }
-
+/**************************/
 /*Pagination*/
 .pagination {
     display: inline-block;
@@ -74,86 +94,14 @@ img {
     color: white;
 }
 
+/*********Footer****************/
+.panel-default {
+	border: none;
+}
 
-
-
-
-/*Email Sign-Up*/
-    .form-control{
-		height: 41px;
-		background: #ffffff;
-		box-shadow: none !important;
-		border: none;
-	}
-	.form-control:focus{
-		background: #e2e2e2;
-	}
-    .form-control, .btn{        
-        border-radius: 3px;
-    }
-	.signup-form{
-		width: 390px;
-		margin: 30px auto;
-	}
-	.signup-form form{
-		color: #999;
-		border-radius: 3px;
-    	margin-bottom: 15px;
-        background: #fff;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-        padding: 30px;
-    }
-	.signup-form h2 {
-		color: #333;
-		font-weight: bold;
-        margin-top: 0;
-    }
-    .signup-form hr {
-        margin: 0 -30px 20px;
-    }    
-	.signup-form .form-group{
-		margin-bottom: 20px;
-	}
-	.signup-form input[type="checkbox"]{
-		margin-top: 3px;
-	}
-	.signup-form .row div:first-child{
-		padding-right: 10px;
-	}
-	.signup-form .row div:last-child{
-		padding-left: 10px;
-	}
-    .signup-form .btn{        
-        font-size: 16px;
-        font-weight: bold;
-		background: #383e55;
-		border: none;
-		min-width: 140px;
-    }
-	.signup-form .btn:hover, .signup-form .btn:focus{
-		background: #2389cd !important;
-        outline: none;
-	}
-    .signup-form a{
-		color: #fff;
-		text-decoration: underline;
-	}
-	.signup-form a:hover{
-		text-decoration: none;
-	}
-	.signup-form form a{
-		color: #3598dc;
-		text-decoration: none;
-	}	
-	.signup-form form a:hover{
-		text-decoration: underline;
-	}
-    .signup-form .hint-text {
-		padding-bottom: 15px;
-		text-align: center;
-    }
-
-
+.panel-footer {
+	padding: 10px 40px;
+}
 
 
 

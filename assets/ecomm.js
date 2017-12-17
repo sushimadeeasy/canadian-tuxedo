@@ -10,7 +10,7 @@
     console.log('data', data);
     $('#search').empty();
     for (i = 0; i < data.items.length; i++) {
-        $('#search').append('<div>Name: ' + data.items[i].name + '</div>');
+        $('#pics-appear-here').append('<div>Name: ' + data.items[i].name + '</div>');
         $('#pics-appear-here').prepend("<img src='"+data.items[i].largeImage+"'>");
     }
 
