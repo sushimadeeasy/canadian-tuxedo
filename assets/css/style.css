@@ -1,6 +1,28 @@
-/*update color on search tab*/
 
+/*NavBar styling*/
+div#navbar-primary-collapse{
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 16px;
+	font-color: #222222;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-bottom: 5px;
 
+}
+
+.navbar {
+	border-radius: 25px;
+}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
+	margin-top:5px;
+}
+/*******************************************/
 
 /*jumbotron to hold gifs*/
 .jumbotron {
@@ -30,11 +52,13 @@ img {
     padding:1px;
    	border:1px solid #021a40;
     background-color:#ffffff;
+    text-align: center;
 }
 
 /*Pagination*/
 .pagination {
     display: inline-block;
+
 }
 
 .pagination a {
