@@ -1,6 +1,7 @@
 
 h1 {
 	color: #ffffff;
+
 	margin-top: 5px;
 	padding-top: 15px;
 }
@@ -83,14 +84,14 @@ div#navbar-primary-collapse{
 img {
 	border-radius: 25px;
     box-shadow: 0 15px 35px -6px #383e55;
-    height:250px;
+    height:auto;
     width: 250px;
     max-width: 100%;
     margin-right: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
     float: left;
-    padding:1px;
+    padding:10px;
    	border:1px solid #c2c2d6;
     background-color:#ffffff;
     text-align: center;
@@ -99,7 +100,7 @@ img {
 /*Pagination*/
 .pagination {
     display: inline-block;
-
+    font-size: 15px;
 }
 
 .pagination a {
@@ -116,23 +117,13 @@ img {
 }
 
 /*********Footer****************/
-.panel-default {
-	border: none;
-}
 
-.panel-footer {
-	  bottom: 0px;
-      background-color: yellow;
-      position: absolute;
-      width: 100%;
-      text-align: right; 
-      height:20px;
-}
 
 #about {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	float: right;
 	padding-bottom: 5px;
+	z-index: 5
 }
 
 
