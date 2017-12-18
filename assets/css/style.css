@@ -1,6 +1,10 @@
 
+h1.text-center {
+	background: url('swatch.jpg');
+}
+
 .page-header{
-	background-image: url(../swatch.jpg);
+	
 	border-bottom: none;
 	padding-bottom: 5px;
 	margin: 10px 0 10px;
@@ -8,6 +12,9 @@
 
 body {
 	font-family: 'Georgia', Times, Times New Roman, serif;
+	margin:0;
+   padding:0;
+   height:100%
 }
 
 /*******************NavBar styling*********************************/
@@ -32,6 +39,7 @@ div#navbar-primary-collapse{
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
 	margin-right: 15px;
 	margin-left: 15px;
+	height:100%;
 }
 
 .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
@@ -41,6 +49,10 @@ div#navbar-primary-collapse{
 .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
 	margin-top: 5px;
 }
+
+.container {
+	height:100%;
+}
 /*******************************************/
 
 /*jumbotron to hold images*/
@@ -49,6 +61,7 @@ div#navbar-primary-collapse{
 	box-shadow: 0 18px 26px -6px #383e55;	
 	background-size: cover;
 	margin: 0 25px 0 45px;
+	height: 100%;
 
 }
 
@@ -65,7 +78,7 @@ img {
     height:250px;
     width: 250px;
     max-width: 100%;
-    margin-right: 25px;
+    margin-right: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
     float: left;
@@ -100,9 +113,18 @@ img {
 }
 
 .panel-footer {
-	padding: 10px 40px;
+	  bottom: 0px;
+      background-color: yellow;
+      position: absolute;
+      width: 100%;
+      text-align: right; 
+      height:20px;
 }
 
-
+#about {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	float: right;
+	padding-bottom: 5px;
+}
 
 
