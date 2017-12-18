@@ -1,23 +1,24 @@
 
 $('#submitText').on('click', function(){
 
-	// $('#container').empty();
+    // $('#container').empty();
 
-	var textEntered = $('#enterText').val();
+    var textEntered = $('#enterText').val();
 
-	$.ajax({
+    $.ajax({
     url: 'https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?apiKey=bnyxt2x6nya6s3h7fvt52d26&query='+ textEntered
-	}).done(function(data) {
+    }).done(function(data) {
     console.log('data', data);
     $('.content').empty();
     for (i = 0; i < data.items.length; i++) {
-        $('.content').append('<div>Name: ' + data.items[i].name + '</div>');
+        $('.content').prepend('<div>Name: ' + data.items[i].name + '</div>');
         $('#pics').prepend("<img src='"+data.items[i].largeImage+"'>");
+        $('#price').prepend('<div>price: ' +data.items[i].salePrice+'</div>')
     }
 
 })
 
-	return false;
+    return false;
 
 })
 
