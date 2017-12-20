@@ -105,11 +105,11 @@ div#navbar-primary-collapse{
 
 img {
 	border-radius: 25px;
-    box-shadow: 0 10px 15px -10px #383e55;
+    box-shadow: 0 10px 20px -10px #383e55;
     height:auto;
     width: 250px;
     max-width: 100%;
-    margin-right: 5px;
+    margin-right: 25px;
     margin-top: 20px;
     margin-bottom: 20px;
     float: left;
