@@ -11,7 +11,6 @@
     $('.content').empty();
     for (i = 0; i < data.items.length; i++) {
         // $('.content').prepend('<div>Name: ' + data.items[i].name + '</div>');
-        $('<div>').prepend('<div>Name: ' + data.items[i].name + '</div>');
         // $('#pics').prepend("<img src='"+data.items[i].largeImage+"'>");
         // $('#price').prepend('<div>price: ' +data.items[i].salePrice+'</div>')
         var picDiv = $("<div>");
@@ -26,8 +25,6 @@
             $('#pics').prepend(itemImg);
             // Prependng the animalDiv to the HTML page in the "#gifs-appear-here" div
             $("#giphHere").append(picDiv);
-
-
     }
 
 })
