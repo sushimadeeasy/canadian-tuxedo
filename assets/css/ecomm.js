@@ -11,13 +11,13 @@ var textEntered = $('#enterText').val();
     $('.content').empty();
     for (i = 0; i < data.items.length; i++) {
                 
-            var p = $("<p>").text("Price: $" + data.items[i].salePrice);
+            var p = $("<p class='price'>").text("Price: $" + data.items[i].salePrice);
             
             var description = $("<p class='anything'>").text("" + data.items[i].name);
 
-            var numbReviews = $("<p class='reviews'>").text("" + data.items[i].numReviews);
+            var numbReviews = $("<p>").text("" + data.items[i].numReviews);
 
-            var reviewpic = $("<p>").html("<img src="+data.items[i].customerRatingImage+">");
+            var reviewpic = $("<p class='reviews' >").html("<img src="+data.items[i].customerRatingImage+">");
 
             var itemImg = $("<img class='sweet'>");
  
