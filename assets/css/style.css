@@ -91,7 +91,7 @@ div#navbar-primary-collapse{
 
 /********format images***********/
 
-img.sweet {
+img.card-img-top {
   border-radius: 25px;
     box-shadow: 0 10px 20px -10px #383e55;
     height:auto;
@@ -104,8 +104,35 @@ img.sweet {
     padding:18px;
     border:1px solid #c2c2d6;
     background-color:#ffffff;
-    text-align: center;
+    margin-left: 11%;
 
+}
+
+.card-colums {
+  display: inline-block;
+}
+
+.card {
+    overflow: auto;
+    width: 27%;
+    height: 100%;
+    float: left;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-left: 1%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#dataurl {
+  text-decoration: none;
 }
 
 /*img {
