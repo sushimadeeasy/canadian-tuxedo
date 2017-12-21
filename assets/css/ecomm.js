@@ -19,7 +19,7 @@ var textEntered = $('#enterText').val();
 
             var reviewpic = $("<p>").html("<img src="+data.items[i].customerRatingImage+">");
 
-            var itemImg = $("<img>");
+            var itemImg = $("<img class='sweet'>");
  
             itemImg.attr("src", data.items[i].largeImage);
             // Appending the paragraph and image tag to the animalDiv
@@ -41,3 +41,4 @@ var textEntered = $('#enterText').val();
    return false;
 
 })
+

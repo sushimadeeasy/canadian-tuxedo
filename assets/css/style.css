@@ -34,7 +34,7 @@ body {
 
 /********Prices*************/
 
-p {
+/*p {
     float: left;  
 }
 
@@ -45,7 +45,7 @@ p {
     font-size: 14px;
     font-weight: 800;
     margin-top:250px;
-}
+}*/
 
 
 /*******************NavBar styling*********************************/
@@ -87,7 +87,7 @@ div#navbar-primary-collapse{
 /*******************************************/
 
 /*jumbotron to hold images*/
-.jumbotron {
+/*.jumbotron {
 	background-color: #f5f5f5;
 	box-shadow: 0 18px 26px -6px #383e55;	
 	background-size: cover;
@@ -99,11 +99,11 @@ div#navbar-primary-collapse{
 .row {
 	margin-left: 0px;
 	margin-right: 0px;
-}
+}*/
 
-/*format images */
+/********format images***********/
 
-img {
+/*img {
 	border-radius: 25px;
     box-shadow: 0 10px 20px -10px #383e55;
     height:auto;
@@ -117,9 +117,9 @@ img {
    	border:1px solid #c2c2d6;
     background-color:#ffffff;
     text-align: center;
-}
+}*/
 /*************zoom effects*************/
-img { transition: all .2s ease-in-out; }
+/*img { transition: all .2s ease-in-out; }
 img:hover { 
 	box-shadow: 0px 0px 150px #000000;
     z-index: 2;
@@ -131,7 +131,7 @@ img:hover {
     -moz-transform: scale(1.5);
     transition: all 200ms ease-in;
     transform: scale(1.5);
-}
+}*/
 
 /************Search Button********/
 button#submitText {
