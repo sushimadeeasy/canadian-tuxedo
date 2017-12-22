@@ -8,7 +8,7 @@
     var urlWalmart = 'https://cryptic-headland-94862.herokuapp.com/http://api.walmartlabs.com/v1/search?apiKey=bnyxt2x6nya6s3h7fvt52d26&query=' + textEntered;
 
     // Set url variable for Ebay
-    var urlEbay = 'https://cryptic-headland-94862.herokuapp.com/http://svcs.ebay.com/services/search/FindingService/v1?OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.0.0&SECURITY-APPNAME=SushantS-canadian-PRD-8132041a0-dac71dfb&GLOBAL-ID=EBAY-US&RESPONSE-DATA-FORMAT=JSON&keywords=' + textEntered + '&paginationInput.entriesPerPage=20&sortOrder=BestMatch'; 
+    var urlEbay = 'https://cryptic-headland-94862.herokuapp.com/http://svcs.ebay.com/services/search/FindingService/v1?OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.0.0&SECURITY-APPNAME=SushantS-canadian-PRD-8132041a0-dac71dfb&GLOBAL-ID=EBAY-US&RESPONSE-DATA-FORMAT=JSON&keywords=' + textEntered + '&paginationInput.entriesPerPage=10&sortOrder=CountryAscending'; 
     // Starts Ajax call to Walmart to pull data
     $.ajax({
     url: urlWalmart
@@ -17,6 +17,9 @@
     
     for (i = 0; i < data.items.length; i++) {
             var productURL = data.items[i].productUrl;
+            
+            var button = ("<button type='button' class='btn btn-info'>Learn more</button>");
+
             var cardDiv = $("<div class='card'>");
             
             var itemImg = $("<img class='card-img-top'>");
@@ -26,7 +29,7 @@
 
             var reviewpic = "<img src="+data.items[i].customerRatingImage+">";
             var cardBody = $("<div class='card-body'>");
-            var title = ("<a id='dataurl' href='" + productURL + "'target=_blank><h4 class='card-title'>" + data.items[i].name + "</h4></a><p class='card-text'>" + reviewpic + "</p><p class='card-text text-danger price'>$" + data.items[i].salePrice + "</p>");
+            var title = ("<a id='dataurl' href='" + productURL + "'target=_blank><h4 class='card-title'>" + data.items[i].name + "</h4></a><p class='card-text'>" + reviewpic + "</p><p class='card-text text-danger price'>$" + data.items[i].salePrice + "</p><a id='dataurl' href='" + productURL + "'target=_blank>" + button + "</a>");
             
 
             var childDiv = cardBody.append(title);
@@ -80,6 +83,8 @@
                 var price = item.sellingStatus[0].currentPrice[0].__value__;
 
                 var cardDiv = $("<div class='card'>");
+
+                var button = ("<button type='button' class='btn btn-info'>Learn more</button>");
             
                 var itemImg = $("<img class='card-img-top'>");
                     itemImg.attr('src', pic);
@@ -87,7 +92,7 @@
                 var motherDiv = cardDiv.append(itemImg)
 
                 var cardBody = $("<div class='card-body'>");
-                var title = ("<a id='dataurl' href='" + viewitem + "'target=_blank><h4 class='card-title'>" + titleEbay + "</h4></a><p class='card-text text-danger price'>$" + price + "</p>");
+                var title = ("<a id='dataurl' href='" + viewitem + "'target=_blank><h4 class='card-title'>" + titleEbay + "</h4></a><p class='card-text text-danger price'>$" + price + "</p><a id='dataurl' href='" + viewitem + "'target=_blank>" + button + "</a>");
                 
                 var childDiv = cardBody.append(title);
 
