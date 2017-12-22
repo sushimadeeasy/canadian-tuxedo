@@ -1,5 +1,5 @@
  $('#submitText').on('click', function(){
-    // $('#clearIt').empty();
+    $('.card-colums').html('');
     // Get input from value entered and submitted on search bar
     var textEntered = $('#enterText').val();
       
